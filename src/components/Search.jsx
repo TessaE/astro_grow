@@ -33,7 +33,7 @@ export const Search = ({docs}) => {
             <ul className="search-results">
                 { plants.map((plant) => (
                     <li className="search-result" key={plant.id}>
-                        <a href={`/${plant.slug}/`}>{plant.data.nameCommon}</a>
+                        <a href={`/grow/${plant.slug}/`}>{plant.data.nameCommon}</a>
                         { plant.data.nameLatin && <i> ({plant.data.nameLatin})</i> }
                         { plant.data.sowIndoors && 
                             <p>
