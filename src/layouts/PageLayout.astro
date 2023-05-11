@@ -1,0 +1,102 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@font-face {
+		font-family: "JaneRoe";
+		src: url('/fonts/JaneRoe-Light.ttf') format('truetype');
+		font-display: swap;
+	}
+	@font-face {
+		font-family: "JaneRoeBold";
+		src: url('/fonts/JaneRoe-Bold.ttf') format('truetype');
+		font-display: swap;
+	}
+	:root {
+		--green-dark: #3b5041;
+		--green-light: #629272;
+		--purple-dark: #393756;
+		--purple-light: #8d6ea1;
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		color: #171a17;
+		background-color: #F6F6F6;
+	}
+	nav, main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	nav {
+		padding-block: 16px 4px;
+	}
+	h1, h4, label {
+    	font-family: "JaneRoeBold";
+    }
+	h4, label {
+		font-size: 1.2rem;
+	}
+	input {
+		display: block;
+		margin-block: 8px 24px;
+		padding-inline: 8px;
+		height: 40px;
+		width: 100%;
+	}
+	input:focus-visible {
+		outline-color: var(--green-light);
+	}
+	a {
+		color: var(--purple-dark);
+	}
+	a:visited {
+		color: var(--purple-light);
+	}
+	a:hover, a:focus-visible {
+		color: var(--green-light);
+	}
+	a:active {
+		color: var(--green-dark);
+	}
+	ul.search-results {
+		margin: 0;
+		padding: 0;
+	}
+	li.search-result {
+		list-style-type: none;
+		margin-block: 20px;
+		padding: 12px;
+		background-color: white;
+		border-radius: 4px;
+	}
+	li.search-result a {
+		font-weight: bold;
+	}
+	li.search-result p {
+		margin-block: 12px 4px;
+	}
+	img.svg-icon {
+		height: 20px;
+		vertical-align: text-bottom;
+		margin-right: 4px;
+	}
+</style>
