@@ -33,17 +33,17 @@ export const Search = ({docs}) => {
             <ul className="search-results">
                 { plants.map((plant) => (
                     <li className="search-result" key={plant.id}>
-                        <a href={`/grow/${plant.slug}/`}>{plant.data.nameCommon}</a>
+                        <a href={`/astro_grow/${plant.slug}/`}>{plant.data.nameCommon}</a>
                         { plant.data.nameLatin && <i> ({plant.data.nameLatin})</i> }
                         { plant.data.sowIndoors && 
                             <p>
-                                <img src="/home-outline.svg" alt="house icon" className="svg-icon" />
+                                <img src="/astro_grow/home-outline.svg" alt="house icon" className="svg-icon" />
                                 <span>Binnen zaaien vanaf:</span> <strong>{plant.data.sowIndoors}</strong>
                             </p> 
                         }
                         { plant.data.sowOutdoors && 
                             <p>
-                                <img src="/sun-outline.svg" alt="sun icon" className="svg-icon" />
+                                <img src="/astro_grow/sun-outline.svg" alt="sun icon" className="svg-icon" />
                                 <span>Buiten zaaien vanaf:</span> <strong>{plant.data.sowOutdoors}</strong>
                             </p> 
                         }

@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: 'https://tessae.github.io',
-  base: '/grow'
+  base: '/astro_grow'
 });

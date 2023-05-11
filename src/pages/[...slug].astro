@@ -13,19 +13,19 @@ const { plant } = Astro.props;
 const { Content } = await plant.render();
 ---
 <PageLayout title={plant.slug}>
-  <nav><a href="/grow/">Ga terug</a></nav>
+  <nav><a href="/astro_grow/">Ga terug</a></nav>
   <main>
     <h1>{plant.data.nameCommon}</h1>
     { plant.data.nameLatin && (<h4><i>{plant.data.nameLatin}</i></h4>) }
     { plant.data.sowIndoors && 
       <p>
-          <img src="/home-outline.svg" alt="house icon" class="svg-icon" />
+          <img src="/astro_grow/home-outline.svg" alt="house icon" class="svg-icon" />
           <span>Binnen zaaien vanaf:</span> <strong>{plant.data.sowIndoors}</strong>
       </p> 
     }
     { plant.data.sowOutdoors && 
         <p>
-            <img src="/sun-outline.svg" alt="sun icon" class="svg-icon" />
+            <img src="/astro_grow/sun-outline.svg" alt="sun icon" class="svg-icon" />
             <span>Buiten zaaien vanaf:</span> <strong>{plant.data.sowOutdoors}</strong>
         </p> 
     }
