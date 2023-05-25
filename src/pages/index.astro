@@ -1,5 +1,5 @@
 ---
-import { Search } from '../components/Search';
+import { SearchAndFilter } from '../components/SearchAndFilter';
 import PageLayout from '../layouts/PageLayout.astro';
 import { getCollection } from 'astro:content';
 
@@ -10,7 +10,7 @@ const plants = await getCollection('plants');
 <PageLayout title="Grow">
 	<main>
 		<section>
-			<Search client:load docs={plants} />
+			<SearchAndFilter client:load docs={plants} />
 		</section>
 	</main>
 </PageLayout>
