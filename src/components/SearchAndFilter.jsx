@@ -39,9 +39,11 @@ export const SearchAndFilter = ({docs}) => {
         setQuery(value)
     }
 
-    const handleSelectLocation = (event) => {
-        let value = event.target.value
-        setLocation(value)
+    const handleSelectLocation = (newLocation) => {
+      if (newLocation === "indoors" | newLocation === "outdoors") {
+        if (location === newLocation) setLocation(undefined)
+        else setLocation(newLocation)
+      }
     }
 
     const handleSelectMonth = (event) => {
@@ -62,11 +64,14 @@ export const SearchAndFilter = ({docs}) => {
             </label>
 
             <div className="filters">
-                <select name="location" id="location" value={location} onChange={handleSelectLocation} aria-label="Filter on location">
-                    <option value="">Kies locatie...</option>
-                    <option value="indoors">Binnen</option>
-                    <option value="outdoors">Buiten</option>
-                </select>
+                <div className="filter-location">
+                    <button onClick={() => handleSelectLocation("indoors")} className={location === "indoors" ? "location-active" : ""} aria-label={"Filter on location: indoors"}>
+                      <img src="/astro_grow/home-outline.svg" alt="house icon" className="svg-icon" />
+                    </button>
+                    <button onClick={() => handleSelectLocation("outdoors")} className={location === "outdoors" ? "location-active" : ""} aria-label={"Filter on location: outdoors"}>
+                      <img src="/astro_grow/sun-outline.svg" alt="sun icon" className="svg-icon" />
+                    </button>
+                </div>
 
                 <select name="month" id="month" value={month} onChange={handleSelectMonth} aria-label="Filter on month">
                     <option value="">Kies maand...</option>

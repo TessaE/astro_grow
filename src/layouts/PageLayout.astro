@@ -33,6 +33,7 @@ const { title } = Astro.props;
 	:root {
 		--green-dark: #3b5041;
 		--green-light: #629272;
+		--green-very-light: #bad7c1;
 		--purple-dark: #393756;
 		--purple-light: #8d6ea1;
 	}
@@ -87,9 +88,18 @@ const { title } = Astro.props;
 	}
 	@container (min-width: 450px) {
 		div.filters {
-			grid-template-columns: 1fr 1fr max-content;
+			grid-template-columns: max-content 1fr max-content;
 		}
 	}
+	div.filter-location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+	}
+	div.filter-location button.location-active {
+    background-color: var(--green-very-light);
+    border-width: 1px;
+  }
 	ul.search-results {
 		margin: 0;
 		padding: 0;
