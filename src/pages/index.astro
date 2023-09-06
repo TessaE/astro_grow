@@ -8,6 +8,7 @@ const plants = await getCollection('plants');
 ---
 
 <PageLayout title="Grow">
+  <a class="skip-link" href="#plants">Skip to plant list</a>
 	<main>
 		<section>
 			<SearchAndFilter client:load docs={plants} />

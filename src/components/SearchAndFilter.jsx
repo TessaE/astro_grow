@@ -65,10 +65,12 @@ export const SearchAndFilter = ({docs}) => {
 
             <div className="filters">
                 <div className="filter-location">
-                    <button onClick={() => handleSelectLocation("indoors")} className={location === "indoors" ? "location-active" : ""} aria-label={"Filter on location: indoors"}>
+                    <button onClick={() => handleSelectLocation("indoors")} className={location === "indoors" ? "location-active" : ""}
+                      role="switch" aria-checked={location === "indoors"} aria-label={"Filter on location: indoors"}>
                       <img src="/astro_grow/home-outline.svg" alt="house icon" className="svg-icon" />
                     </button>
-                    <button onClick={() => handleSelectLocation("outdoors")} className={location === "outdoors" ? "location-active" : ""} aria-label={"Filter on location: outdoors"}>
+                    <button onClick={() => handleSelectLocation("outdoors")} className={location === "outdoors" ? "location-active" : ""}
+                      role="switch" aria-checked={location === "outdoors"} aria-label={"Filter on location: outdoors"}>
                       <img src="/astro_grow/sun-outline.svg" alt="sun icon" className="svg-icon" />
                     </button>
                 </div>
@@ -87,7 +89,7 @@ export const SearchAndFilter = ({docs}) => {
                 <button onClick={handleResetFilters}>Reset filters</button>
             </div>
 
-            <ul className="search-results">
+            <ul className="search-results" id="plants" tabindex="-1">
                 { plants.map((plant) => (
                     <li className="search-result" key={plant.id}>
                         <a href={`/astro_grow/${plant.slug}/`}>{plant.data.nameCommon}</a>

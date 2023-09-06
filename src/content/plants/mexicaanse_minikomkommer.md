@@ -10,7 +10,7 @@ sowOutdoors: "Half mei"
 
 <p class="plant-content">Oogsten van juli tot oktober, zodra de vruchten ongeveer zo groot zijn als een druif</p>
 
-<p class="plant-content">In het late najaar kunnen de planten opnieuw overgeplant worden in potten om ze binnen te laten overwinteren. Vanaf mei kunnen ze dan weer in vollegrond geplaatst worden.</p>
+<p class="plant-content">In het late najaar kunnen de planten opnieuw overgeplant worden in potten om ze binnen te laten overwinteren. Vanaf mei kunnen ze dan weer in de vollegrond geplaatst worden.</p>
 
 
 (<a>https://www.mooiemoestuin.nl/groenteteelt/vruchtgewassen/cucamelon/</a>)
