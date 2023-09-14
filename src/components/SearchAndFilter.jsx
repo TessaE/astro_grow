@@ -89,7 +89,7 @@ export const SearchAndFilter = ({docs}) => {
                 <button onClick={handleResetFilters}>Reset filters</button>
             </div>
 
-            <ul className="search-results" id="plants" tabindex="-1">
+            <ul className="search-results" id="plants" tabIndex="-1">
                 { plants.map((plant) => (
                     <li className="search-result" key={plant.id}>
                         <a href={`/astro_grow/${plant.slug}/`}>{plant.data.nameCommon}</a>
