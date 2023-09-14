@@ -20,13 +20,13 @@ const { Content } = await plant.render();
     { plant.data.sowIndoors && 
       <p>
           <img src="/astro_grow/home-outline.svg" alt="house icon" class="svg-icon" />
-          <span>Binnen zaaien vanaf:</span> <strong>{plant.data.sowIndoors}</strong>
+          <span>Binnen zaaien vanaf: </span><strong>{plant.data.sowIndoors}</strong>
       </p> 
     }
     { plant.data.sowOutdoors && 
         <p>
             <img src="/astro_grow/sun-outline.svg" alt="sun icon" class="svg-icon" />
-            <span>Buiten zaaien vanaf:</span> <strong>{plant.data.sowOutdoors}</strong>
+            <span>Buiten zaaien vanaf: </span><strong>{plant.data.sowOutdoors}</strong>
         </p> 
     }
     <Content />
