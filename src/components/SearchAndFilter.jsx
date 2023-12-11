@@ -83,7 +83,6 @@ export const SearchAndFilter = ({docs}) => {
                     <option value="april">April</option>
                     <option value="mei">Mei</option>
                     {/* <option value="juni">Juni</option> */}
-                    {/* TODO: andere maanden */}
                 </select>
 
                 <button onClick={handleResetFilters}>Reset filters</button>
