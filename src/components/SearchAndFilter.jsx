@@ -78,7 +78,7 @@ export const SearchAndFilter = ({docs}) => {
                 <select name="month" id="month" value={month} onChange={handleSelectMonth} aria-label="Filter on month">
                     <option value="">Kies maand...</option>
                     {/* <option value="januari">Januari</option> */}
-                    {/* <option value="februari">Februari</option> */}
+                    <option value="februari">Februari</option>
                     <option value="maart">Maart</option>
                     <option value="april">April</option>
                     <option value="mei">Mei</option>
