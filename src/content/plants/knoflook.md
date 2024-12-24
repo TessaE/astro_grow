@@ -3,7 +3,7 @@ nameCommon: "Knoflook"
 sowOutdoors: "Maart"
 ---
 
-<p class="plant-content">Plant elke teen knoflook een paar centimeter diep, met het puntje naar boven. Geef ze ongeveer 10 centimeter ruimte rondom.</p>
+<p class="plant-content">Plant elke teen knoflook een paar centimeter diep, met het puntje naar boven. Geef ze ongeveer 10 centimeter ruimte rondom. Dit kan in maart, maar ook al eind oktober het jaar ervoor.</p>
 
 <p class="plant-content">Wied onkruid en knip bloemen weg of trek de bloeistengels eruit. Bij veel droogte af en toe water geven.</p>
 
