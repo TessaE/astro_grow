@@ -66,11 +66,11 @@ export const SearchAndFilter = ({docs}) => {
             <div className="filters">
                 <div className="filter-location">
                     <button onClick={() => handleSelectLocation("indoors")} className={location === "indoors" ? "location-active" : ""}
-                      role="switch" aria-checked={location === "indoors"} aria-label={"Filter on location: indoors"}>
+                      role="switch" aria-checked={location === "indoors"} aria-label={"Filter on location: indoors"} title={"Sow indoors"}>
                       <img src="/astro_grow/home-outline.svg" alt="house icon" className="svg-icon" />
                     </button>
                     <button onClick={() => handleSelectLocation("outdoors")} className={location === "outdoors" ? "location-active" : ""}
-                      role="switch" aria-checked={location === "outdoors"} aria-label={"Filter on location: outdoors"}>
+                      role="switch" aria-checked={location === "outdoors"} aria-label={"Filter on location: outdoors"} title={"Sow outdoors"}>
                       <img src="/astro_grow/sun-outline.svg" alt="sun icon" className="svg-icon" />
                     </button>
                 </div>

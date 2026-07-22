@@ -133,6 +133,8 @@ const { title } = Astro.props;
 	img.svg-icon {
 		height: 20px;
 		vertical-align: text-bottom;
-		margin-right: 4px;
 	}
+  img.svg-icon:has(+ span) {
+    margin-right: 4px;
+  }
 </style>
